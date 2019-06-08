@@ -27,7 +27,7 @@ forms
 
  #### SNIPPET PARAMETERS
 * htmlElement - the html element to attach Jquery Validate - (default) #contactForm.  You can use a dot before the element to target classes
- * inputOptionsTpl - is a tpl chunk used to build a json object of all Jquery Validate properties example, rules, messages etc.
+ * tpl - is a tpl chunk used to build a json object of all Jquery Validate properties example, rules, messages etc.
       * See all jquery validate  Options here https://jqueryvalidation.org/validate/
       * (default) tpl chunk is tpl.jqueryValidate.jsOptions
  * version - Jquery Validate Version to use - (default) 1.16.0
