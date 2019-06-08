@@ -1,0 +1,6 @@
+Changelog for jqueryValidate.
+
+1.0.0-beta
+==============
+- Optimized for MODX 2.3
+- Works with jQuery Validate 1.16.0 by default
