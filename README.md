@@ -20,7 +20,7 @@ forms
 ```
 [[!jqueryValidate?
     &htmlElement=`#contactForm`
-    &inputOptionsTpl=`tpl.jqueryValidate.jsOptions`
+    &tpl=`tpl.jqueryValidate.jsOptions`
     &version=`1.16.0`
 ]]
 ```

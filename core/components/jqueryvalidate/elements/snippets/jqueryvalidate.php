@@ -5,7 +5,7 @@
 * Example Snippet Call
 [[!jqueryValidate?
 &htmlElement=`#contactForm`
-&inputOptionsTpl=`jqvInputOptions`
+&tpl=`tpl.jqueryValidate.jsOptions`
 &version=`1.16.0`
 ]]
 
@@ -27,7 +27,7 @@ $jval_js_version = $modx->getOption('version',$scriptProperties, '1.16.0');
 /*
  * Obtain all jval options provided by user in JSON format
  */
-$inputOptionsTpl = $modx->getOption('inputOptionsTpl',$scriptProperties, "tpl.jqueryValidate.jsOptions");
+$inputOptionsTpl = $modx->getOption('tpl',$scriptProperties);
 
 $jvalInputOptions = $modx->getChunk($inputOptionsTpl);
 

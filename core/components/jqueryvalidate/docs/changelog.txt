@@ -1,5 +1,9 @@
 Changelog for jqueryValidate.
 
+1.0.2-beta
+==============
+- Improved on the default jqueryValidate snippet tpl property by adding a manager snippet tpl property which is used as default
+
 1.0.1-beta
 ==============
 - Cleaned up some Unecessary Build Files
