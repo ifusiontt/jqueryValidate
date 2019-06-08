@@ -1,5 +1,9 @@
 Changelog for jqueryValidate.
 
+1.0.31-beta
+===============
+- Added the 1.03 Transport Package
+
 1.0.3-beta
 ===============
 - Minor documentation change to showcase the tpl name change for the jqueryvalidate.php from jsInputOptions to just tpl
