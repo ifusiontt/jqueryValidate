@@ -1,5 +1,11 @@
 Changelog for jqueryValidate.
 
+1.0.5.1-beta
+- Added documentation for the installation of the jQuery Javascript Library
+
+1.0.5-beta
+- Added the ability to install the jQuery javascript library when jQuery validate is installed
+
 1.0.4-beta
 ===============
 - Improved on documeentation by adding a complete example in README.md

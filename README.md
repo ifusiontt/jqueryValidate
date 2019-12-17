@@ -3,16 +3,18 @@
 * This package works with Modx Revolution 2.3 and above.  
 * It acts as a wrapper for jquery validate (https://jqueryvalidation.org/) and is used to perform frontend validation on
 forms
-* The Jquery JS library is required to run this pakage
+* The Jquery JavaScript library is required to run this pakage
 
 
 ## Quick start
 
-* Download the latest version of the transport file from the _packages directory in this repository
+* Download the latest version of the transport file from the _packages directory in this repository.
 
 * Upload to your Modx core/packages directory
 
 * Search locally for package from Modx Package Manager and Install.
+
+* Alternatively you can download from packgage manager
 
 
 ## Usage
@@ -21,18 +23,23 @@ forms
 [[!jqueryValidate?
     &htmlElement=`#contactForm`
     &tpl=`tpl.jqueryValidate.jsOptions`
-    &version=`1.16.0`
+    &install_jquery=`0`
+    &jquery_version=`2.2.4`
+    &jvalidate_version=`1.16.0`
 ]]
 ```
 
  #### SNIPPET PARAMETERS
 * htmlElement - the html element to attach Jquery Validate - (default) #contactForm.  You can use a dot before the element to target classes
- * version - Jquery Validate Version to use - (default) 1.16.0
- * tpl - is a chunk used to build a javascript object of all Jquery Validate properties for example, rules, custom error messages etc.
+* tpl - is a chunk used to build a javascript object of all Jquery Validate properties for example, rules, custom error messages etc.
      * See all jquery validate  Options here https://jqueryvalidation.org/validate/
      * (default) tpl chunk is tpl.jqueryValidate.jsOptions
      * You should duplicate the tpl.jqueryValidate.jsOptions chunk (see code below) and create your own validation rules.  The default Tpl has the following
      built in rules for first_name, last_name, email and message. as seen in rules below. These rules would apply to form elements with the correponding names
+*  install_jquery - If you have not installed jquery in your project, you can set this option to 1 to install this dependency. (default) - 0
+*  jquery_version - Specify the version of jQuery.  (default) - 2.2.4
+*  jvalidate_version - Specify the version of Jquery Validate. (default) - 1.16.0 
+     
 
 ##### tpl.jqueryValidate.jsOptions Tpl        
 ```javascript
@@ -76,7 +83,7 @@ forms
 
 [[!jqueryValidate?
 &htmlElement=`#contactForm`
-&version=`1.16.0`
+&install_jquery=`1`
 ]]
 
 <form id="contactForm">
@@ -98,11 +105,6 @@ forms
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-
-<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
   
 </body>
 </html>
