@@ -1,5 +1,8 @@
 Changelog for jqueryValidate.
 
+1.0.5.2-beta
+- Added Package file to Repo
+
 1.0.5.1-beta
 - Added documentation for the installation of the jQuery Javascript Library
 

@@ -65,7 +65,7 @@ forms
             message: "The message is required"
         }
     }
-
+    
 ```
 
 ##### Complete Example
